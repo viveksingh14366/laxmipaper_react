@@ -1,0 +1,1515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #e82127;
+    --brown: #c16b00;
+    --black: #000;
+    --white: #fff;
+    --gray: #4c4c4c;
+    --light-gray: #808080;
+}
+
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c16b00;
+    border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #935100;
+}
+
+/* Header Css */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.navbar-brand>img.lp-logo {
+    width: 230px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav li.nav-item {
+    margin: 0px 25px;
+}
+
+.dropdown-toggle::after {
+    content: unset;
+}
+
+.navbar-nav .nav-link.dropdown-toggle i {
+    position: absolute;
+    bottom: 0;
+    right: 37%;
+    color: var(--red);
+}
+
+.nav-item .nav-link.btn {
+    padding: 6px 25px;
+    border: 1px solid var(--red);
+    border-radius: 30px;
+    transition: 0.8s;
+}
+
+.nav-item .nav-link.btn:hover,
+.nav-item.active .nav-link.btn {
+    color: var(--white);
+    background: var(--red);
+}
+
+.header {
+    display: block;
+    position: fixed;
+    z-index: 9000;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.header.fixed,
+.header.active,
+.header.isoactive {
+    background-color: var(--white);
+    top: 0;
+    height: 87px;
+    box-shadow: 0 1px 2px hsl(0deg 0% 0% / 5%), 0 1px 4px hsl(0deg 0% 0% / 5%), 0 2px 8px hsl(0deg 0% 0% / 5%);
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    top: 62px;
+    border-radius: 0;
+}
+
+.navbar-toggler.mobile-submenu {
+    display: block;
+    color: unset;
+    border: unset;
+    font-size: 16px;
+}
+
+/* Banner Section Css */
+.bannersection {
+    background: url(../img/lp-bg-03.jpg) no-repeat center / cover;
+    padding-top: 5rem;
+    /* padding-bottom: 5rem; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.lp-top-banner-section {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+img.lp-brown-icon {
+    width: 40px;
+    position: absolute;
+    left: 18%;
+    top: -15px;
+}
+
+img.lp-red-icon {
+    width: 120px;
+    position: absolute;
+    top: 40px;
+    left: 33px;
+    z-index: 1;
+}
+
+.lp-banner-circle-img {
+    margin-top: 15px;
+    border-radius: 100%;
+    border: 2px solid #c16b00;
+    padding: 7px;
+}
+
+img.lp-img {
+    width: 100%;
+}
+
+.lp-top-banner-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+h2.lp-banner-title {
+    font-size: 72px;
+    font-weight: 600;
+    color: var(--red);
+}
+
+h2.lp-banner-title span {
+    color: var(--light-gray);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p.lp-banner-subbanner {
+    color: var(--light-gray);
+    font-size: 35px;
+    font-weight: 500;
+    margin: 2rem 0 0;
+}
+
+/* End Banner Section Css */
+
+/* About Section Css */
+.brownsection {
+    padding: 10rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutsection {
+    background: url(../img/lp-bg-02.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.brownsection .title {
+    display: inline-block;
+    position: relative;
+    font-size: 52px;
+    margin-bottom: 3rem;
+}
+
+.aboutsection .title,
+.aboutsection .titledisc {
+    color: var(--white);
+}
+
+.brownsection .title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 100rem;
+}
+
+.aboutsection.brownsection .title:after {
+    border: 2px solid var(--white);
+}
+
+.aboutsection.brownsection .title:after {
+    content: "";
+    display: block;
+    border: 2px solid var(--white);
+    opacity: 0.8;
+    animation: lineWidth 5s ease-in-out forwards;
+}
+
+@keyframes lineWidth {
+    0% {
+        width: 0;
+        opacity: 0.8;
+    }
+
+    100% {
+        width: 100rem;
+        opacity: 1.0;
+    }
+}
+
+.aboutsection .title {
+    opacity: 0;
+    animation: TextWidth 3s ease-in-out forwards;
+}
+
+@keyframes TextWidth {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.brownsection .titledisc {
+    font-size: 20px;
+    line-height: 2;
+}
+
+/* Timeline Css */
+.ps-timeline-sec .container ol:before {
+    background: var(--white);
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+.ps-timeline-sec .container ol:after {
+    background: var(--white);
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.ps-timeline-sec .container {
+    position: relative;
+}
+
+.ps-timeline-sec .container ol.ps-timeline {
+    margin: 250px 0;
+    padding: 0;
+    border-top: 2px solid var(--white);
+    list-style: none;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li {
+    float: left;
+    width: 20%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span {
+    width: 28px;
+    height: 28px;
+    margin-left: -25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0px #fff;
+    text-align: center;
+    font-size: 2em;
+    font-style: normal;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+    content: "";
+    color: var(--white);
+    width: 2px;
+    height: 85px;
+    background: var(--white);
+    position: absolute;
+    top: -85px;
+    left: 50%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after,
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--red);
+    border-radius: 100%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
+    content: "";
+    color: var(--white);
+    width: 2px;
+    height: 85px;
+    background: var(--white);
+    position: absolute;
+    bottom: -85px;
+    left: 50%;
+}
+
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li p.timetitle {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 500;
+    width: 40%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li p.timedisc {
+    color: var(--white);
+    width: 60%;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
+    display: table;
+    margin: 0 auto;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+    position: absolute;
+    margin-top: 2px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
+    display: table;
+    margin: 0 auto;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .ps-top {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 100px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+    position: absolute;
+    margin-top: 35px;
+}
+
+
+/* End About Section Css */
+
+/* Product Section Css */
+
+.productssection {
+    background: url(../img/lp-bg-03.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.productssection .title,
+.clientelesection .title {
+    color: var(--red);
+}
+
+.productssection.brownsection .title:after,
+.clientelesection .title:after {
+    border: 2px solid var(--brown);
+}
+
+.productssection .titledisc,
+.clientelesection .titledisc {
+    color: var(--gray);
+}
+
+.productslist,
+.clientelist {
+    margin: 5rem 0;
+}
+
+.products {
+    border: 5px solid #fff;
+    border-radius: 40px;
+    padding: 30px;
+    margin: calc(var(--bs-gutter-x) * .5) 0;
+    transition: 0.5s;
+}
+
+.products-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.products-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15rem;
+    width: 45%;
+}
+
+.products-right {
+    width: 55%;
+}
+
+.products img.products-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.products-title h2 {
+    font-size: 30pt;
+    font-weight: 300;
+    padding-right: 5rem;
+    color: var(--brown);
+}
+
+.products-measure p {
+    color: var(--gray);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.products:hover,
+.clienteitems:hover .clienteitemsimg {
+    background: var(--brown);
+    border-color: var(--brown);
+}
+
+.products:hover .products-title h2 {
+    color: var(--white);
+}
+
+.products:hover .products img.products-img {
+    box-shadow: rgb(100 100 111 / 40%) 0px 7px 29px 0px;
+}
+
+/* End Product Section Css */
+
+/* Clientele Section Css */
+
+.clientelesection {
+    background: url(../img/lp-bg-01.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+
+.clienteitems-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.clienteitemsimg {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.clienteitemsimg img.icons {
+    width: 140px;
+}
+
+.clienteitems-title p {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.clienteitems {
+    width: 200px;
+}
+
+.clienteitems-secondrow {
+    margin-top: 5rem;
+}
+
+.clienteitems:hover img.icons {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+/* End Clientele Section Css */
+
+/* Management Section Css */
+
+.management {
+    position: relative;
+    border: 2px solid var(--brown);
+    border-radius: 15px;
+    transition: 1s;
+}
+
+img.management-img {
+    width: 230px;
+    height: 230px;
+    object-fit: none;
+    object-position: center;
+    border-radius: 100%;
+    transition: 0.8s;
+}
+
+.managementlist {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.managementimg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    transition: 1s;
+}
+
+.management-hoverimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.management-hoverimg:before {
+    content: '';
+    width: 225px;
+    height: 225px;
+    border: 2px solid transparent;
+    position: absolute;
+    border-radius: 100%;
+    transition: 1s;
+    z-index: 1;
+    background: url(https://dev.wemoveforward.in/laxmipaper/assets/img/management/img1.jpg) no-repeat center / auto;
+    display: none;
+
+}
+
+.management:hover .management-hoverimg:before {
+    display: block;
+    transition: 2s;
+}
+
+.managementimg:before {
+    content: '';
+    width: 230px;
+    height: 230px;
+    border: 2px solid transparent;
+    position: absolute;
+    display: inline-block;
+    border-radius: 100%;
+    transition: 1s;
+}
+
+.management:hover .managementimg:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: rgb(193 110 26 / 50%);
+    border-radius: 15px 15px 0 0;
+}
+
+.managementimg img.icon-img {
+    position: absolute;
+    bottom: 30px;
+    right: 70px;
+    width: 40px;
+    z-index: 2;
+}
+
+.management-title h2 {
+    font-size: 22px;
+}
+
+.management-title {
+    text-align: center;
+    padding: 1.5rem 1rem 2rem;
+    font-size: 20px;
+    transition: 1s;
+    width: 100%;
+}
+
+.management:hover {
+    border: 2px solid transparent;
+}
+
+.management:hover img.management-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.management:hover .management-title {
+    color: #fff;
+    background-color: var(--brown);
+    border-radius: 0 0 15px 15px;
+}
+
+.management:hover .managementimg:before {
+    border: 2px solid #fff;
+    z-index: 1;
+}
+
+.mmslider.slick-slide {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+}
+
+.slick-prev,
+.slick-next {
+    width: 30px;
+    height: 30px;
+    bottom: -50px;
+}
+
+.slick-prev {
+    left: 40%;
+    top: unset;
+}
+
+.slick-next {
+    right: 40%;
+    top: unset;
+}
+
+/* End Management Section Css */
+
+/* Conatct Css */
+.contactsection.brownsection {
+    padding: 10rem 0;
+}
+
+.contactdetails {
+    margin-bottom: 2rem;
+}
+
+.contactsection.brownsection .title {
+    margin-bottom: 5rem;
+}
+
+.conatctno {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.conatctno i {
+    color: var(--brown);
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.number,
+.number a {
+    color: var(--brown);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+input,
+textarea {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 20px;
+    padding: 1rem;
+    font-size: clamp(15px, 1.5vw, 18px);
+}
+
+textarea.formfeilds {
+    height: 190px;
+}
+
+.contactdetails-left {
+    padding-right: 2rem;
+}
+
+.contactdetails-right {
+    padding-left: 2rem;
+}
+
+/*  
+  .form-item {
+    position: relative;
+  }
+
+  input:focus+label, 
+  input:valid+label, 
+  textarea:focus+label, 
+  textarea:valid+label {
+    font-size: clamp(13px, 1.3vw, 16px);
+    color: #777;
+    top: -20px;
+    transition: all .225s ease;
+  } 
+  label {
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    color: #999;
+    font-size: clamp(14px, 1.5vw, 18px);
+    pointer-events: none;
+    user-select: none;
+  }
+  */
+.submit-btn {
+    width: 100%;
+    background: var(--brown);
+    border: 1px solid var(--brown);
+    border-radius: 30px;
+    padding: 0.6rem;
+    color: var(--white);
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.footerlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+}
+
+.footer-right {
+    padding: 3rem 3rem 1rem;
+    background: var(--brown);
+    color: var(--white);
+    position: relative;
+}
+
+.footer-right h4 {
+    font-size: 16px;
+}
+
+.footer-right p {
+    font-size: 12px;
+    margin-bottom: 0.4rem;
+}
+
+.footer-right p:last-child {
+    margin-bottom: 0;
+}
+
+.footersocial {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    margin: 2rem auto 0;
+    font-size: 18px;
+    padding-left: 0;
+}
+
+#footersection {
+    position: relative;
+    z-index: 1;
+}
+
+#footersection:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: var(--brown);
+    right: 0;
+    z-index: 0;
+}
+
+/* Media Queries CSS Start */
+
+/* Medium Desktop Media Queries CSS Start */
+@media screen and (max-width: 1440px) {
+
+    /* Header Css */
+    .navbar-expand-lg .navbar-nav li.nav-item {
+        margin: 0px 15px;
+    }
+
+    .navbar-nav .nav-link.dropdown-toggle i {
+        right: 40%;
+    }
+
+    /* Banner Section Css */
+    .lp-top-banner-section {
+        width: 85%;
+        margin: auto;
+    }
+
+    img.lp-red-icon {
+        top: 40px;
+        left: 28px;
+    }
+
+    img.lp-brown-icon {
+        top: -10px;
+    }
+
+    h2.lp-banner-title {
+        font-size: 60px;
+    }
+
+    p.lp-banner-subbanner {
+        font-size: 37px;
+    }
+
+    /* Timeline css */
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-top,
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+        width: 100%;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p.timetitle,
+    .ps-timeline-sec .container ol.ps-timeline li p.timedisc {
+        width: 50%;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p.timedisc {
+        padding-left: 0;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p.timedisc {
+        font-size: 12px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p.timetitle {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .management:before {
+        left: 17px;
+    }
+}
+
+/* Horizontal Tabs Media Queries CSS Start */
+@media screen and (max-width: 1024px) {
+
+    /* Header Css */
+    .navbar-brand>img.lp-logo {
+        width: 180px;
+    }
+
+    .navbar-expand-lg .navbar-nav li.nav-item {
+        margin: 0px 10px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    /* Banner Section Css */
+    img.lp-brown-icon {
+        width: 30px;
+        top: -5px;
+    }
+
+    img.lp-red-icon {
+        width: 87px;
+        left: 29px;
+    }
+
+    h2.lp-banner-title {
+        font-size: 60px;
+    }
+
+    p.lp-banner-subbanner {
+        font-size: 35px;
+    }
+
+    /* Management CSS */
+    .managementimg,
+    .management:hover img.management-img {
+        height: 250px;
+    }
+
+    img.management-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .management:before {
+        top: 37px;
+        left: 17px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .management-title h2 {
+        font-size: 18px;
+    }
+
+    .management-title {
+        font-size: 16px;
+    }
+
+    .managementimg:before {
+        content: '';
+        width: 180px;
+        height: 180px;
+    }
+
+    .managementimg img.icon-img {
+        bottom: 35px;
+        right: 35px;
+        width: 35px;
+        z-index: 1;
+    }
+
+    /* End Management CSS */
+}
+
+/* Vertical Tabs Media Queries CSS Start */
+@media screen and (max-width: 768px) {
+
+    /* Header css  */
+    .navbar-brand>img.lp-logo {
+        width: 230px;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: unset;
+    }
+
+    .navbar-light .navbar-toggler .fa-xmark,
+    .header.active .navbar-toggler .fa-bars,
+    .header.isoactive .navbar-toggler .fa-bars{
+        display: none;
+    }
+
+    .header.active .navbar-toggler .fa-xmark,
+    .header.isoactive .navbar-toggler .fa-xmark{
+        display: block;
+        font-size: 30px;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler {
+        box-shadow: unset;
+        border: 0;
+    }
+
+    .navbar-light .navbar-toggler-icon i {
+        font-size: 30px;
+        color: #00a957;
+    }
+
+    .navbar-nav .nav-link.dropdown-toggle i {
+        bottom: 30%;
+        right: 0;
+    }
+
+    .nav-item .nav-link.btn {
+        padding: 0.5rem 0;
+        border: 0;
+        border-radius: 0;
+        transition: 0.8s;
+        text-align: left;
+    }
+
+    .header.fixed .container,
+    .header.active .container,
+    .header.isoactive .container{
+        background: #fff;
+    }
+
+    .navbar-nav .nav-item.dropdown.show i {
+        top: 11px;
+    }
+
+    /* Banner Section Css */
+    .lp-top-banner-section {
+        padding-bottom: 5rem;
+    }
+
+    img.lp-red-icon {
+        width: 120px;
+        left: 45px;
+        top: 65px;
+    }
+
+    img.lp-brown-icon {
+        width: 40px;
+        top: 0;
+        left: 16%;
+    }
+
+    .lp-top-banner-title {
+        margin-left: 0;
+    }
+
+    /* Clientele section CSS */
+    .clienteitems {
+        width: 150px;
+    }
+
+    .clienteitemsimg img.icons {
+        width: 90px;
+    }
+
+    .clienteitems-title p {
+        font-size: 1rem;
+    }
+
+    /* End Clientele section CSS */
+
+    /* Management CSS */
+    .managementlist .row .col-xl-3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .managementimg img.icon-img {
+        bottom: 40px;
+        right: 75px;
+        width: 50px;
+        z-index: 1;
+    }
+
+    img.management-img,
+    .managementimg:before {
+        width: 220px;
+        height: 220px;
+    }
+
+    .managementimg,
+    .management:hover img.management-img {
+        height: 300px;
+    }
+
+    /* End Management CSS */
+
+    #footersection:before {
+        width: 100%;
+        height: 62%;
+        bottom: 0;
+    }
+
+    .footer-right .col-xl-3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .footersocial {
+        width: 45%;
+    }
+}
+
+/* Mobile Media Queries CSS Start */
+@media screen and (max-width: 767px) {
+
+    .nav-item .nav-link.btn:hover,
+    .nav-item.active .nav-link.btn {
+        color: var(--red);
+        font-weight: 500;
+        background-color: unset;
+    }
+
+    .navbar-toggler.mobile-submenu {
+        font-size: 14px;
+    }
+
+    /* Banner Section Css */
+    .bannersection {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        display: inline-table;
+        background-attachment: unset;
+    }
+    .brownsection{
+        background-attachment: unset;
+    }
+
+    img.lp-brown-icon {
+        width: 25px;
+        top: -5px;
+        left: 15%;
+    }
+
+    img.lp-red-icon {
+        width: 60px;
+        left: 21px;
+        top: 26px;
+    }
+
+    .lp-top-banner-section {
+        padding-bottom: 3rem;
+    }
+
+    h2.lp-banner-title {
+        font-size: 40px;
+    }
+
+    p.lp-banner-subbanner {
+        font-size: 30px;
+        margin: 1rem 0 0;
+    }
+
+    /* About Section Css */
+    .brownsection {
+        height: 100%;
+    }
+
+    .aboutsection {
+        background-attachment: unset;
+    }
+
+    /* Horizontal Time line Css */
+
+    .ps-timeline-sec .container ol.ps-timeline {
+        margin: 45px 0 0;
+        border-left: 2px solid var(--white);
+        padding-left: 0;
+        border-top: 0;
+        margin-left: 25px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li {
+        height: 105px;
+        float: none;
+        width: inherit;
+    }
+
+    .ps-timeline-sec .container ol:before,
+    .ps-timeline-sec .container ol:after {
+        left: 33px;
+    }
+
+    .ps-timeline-sec .container ol:after {
+        bottom: 0;
+        top: unset;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li:nth-child(2) .img-handler-bot img {
+        width: 70px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li:last-child {
+        margin: 0;
+        bottom: 0;
+        height: 120px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot {
+        bottom: 40px;
+        width: 40%;
+        margin-left: 25px;
+        margin-top: 0;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot img {
+        width: 100%;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li:last-child .ps-top {
+        margin-bottom: 0;
+        top: 20px;
+        width: 50%;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li span {
+        left: 10px;
+        top: 50px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before,
+    .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+        width: 15rem;
+        height: 2px;
+        top: 11px;
+        left: 24px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p.timetitle,
+    .ps-timeline-sec .container ol.ps-timeline li p.timedisc {
+        width: 80%;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p.timetitle {
+        text-align: center;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-top,
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+        position: unset;
+        margin-left: 10px;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li p {
+        text-align: left;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li .ps-top {
+        width: 60%;
+        float: right;
+        right: 0;
+        top: -40px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+        width: 60%;
+        float: right;
+        right: 0;
+        top: -40px;
+    }
+
+    .brownsection {
+        padding: 3rem 0;
+    }
+
+    .brownsection .title {
+        font-size: 42px;
+    }
+
+    .brownsection .titledisc {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Product Section Css */
+    .products {
+        padding: 10px;
+        border-radius: 20px;
+        min-height: 215px;
+    }
+
+    .products-flex {
+        flex-direction: column-reverse;
+    }
+
+    .products-left {
+        height: auto;
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .products-right {
+        width: auto;
+    }
+
+    .products-title h2 {
+        font-size: 12pt;
+        padding-right: 0;
+    }
+
+    .products-measure p {
+        font-size: 12px;
+    }
+
+    .productslist {
+        margin: 2rem 0;
+    }
+
+    /* End Product Section Css */
+
+    /* Clientele section CSS */
+    .clienteitems-flex {
+        display: block;
+        column-count: 2;
+    }
+
+    .clienteitems {
+        width: 165px;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .clienteitemsimg {
+        border-radius: 15px;
+        padding: 30px 15px;
+    }
+
+    .clienteitems-title p {
+        margin-bottom: 1rem;
+    }
+
+    .clienteitems-secondrow {
+        margin-top: 0;
+    }
+
+    .clientelist {
+        margin: 2rem 0 0;
+    }
+
+    /* End Clientele section CSS */
+
+    /* Management section CSS */
+
+    .management:before {
+        top: 43px;
+        left: 67px;
+        width: 215px;
+        height: 215px;
+        background-size: 165%;
+    }
+
+    .management-hoverimg:before {
+        width: 220px;
+        height: 220px;
+        background-size: 170%;
+    }
+
+    .managementimg img.icon-img {
+        right: 95px;
+    }
+
+    .managementlist {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Management section CSS */
+
+    /* Contact CSS */
+    .contactdetails-left,
+    .contactdetails-right {
+        padding: 0;
+    }
+
+    .contactdetails-right {
+        margin-top: 4rem;
+    }
+
+    .contactsection.brownsection {
+        padding: 5rem 0;
+    }
+
+    .contactsection.brownsection .title {
+        margin-bottom: 3rem;
+    }
+
+    /* End Contact CSS */
+
+    .footersocial {
+        width: 100%;
+    }
+
+    #footersection:before {
+        width: 100%;
+        height: 74%;
+    }
+
+    .footer-right {
+        padding: 3rem 0;
+    }
+
+    .footer1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .management-hoverimg:before {
+        background-size: 155%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .navbar-brand>img.lp-logo {
+        width: 150px;
+    }
+
+    img.lp-red-icon {
+        left: 13px;
+        top: 12px;
+    }
+
+    img.lp-brown-icon {
+        top: -20px;
+    }
+
+    h2.lp-banner-title {
+        font-size: 25px;
+    }
+
+    .bannersection {
+        padding-top: 5rem;
+    }
+
+    p.lp-banner-subbanner {
+        font-size: 20px;
+    }
+
+    .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before,
+    .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+        width: 12rem;
+    }
+
+    .managementimg img.icon-img {
+        right: 30px;
+    }
+
+    .brownsection .title {
+        font-size: 35px;
+    }
+
+    .management-hoverimg:before {
+        background-size: 136%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .products-left {
+        height: 10rem;
+    }
+
+    .products-title h2 {
+        font-size: 20pt;
+        padding-right: 0;
+    }
+
+    .products-measure p {
+        font-size: 1rem;
+    }
+}
